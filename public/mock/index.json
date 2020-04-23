@@ -1,0 +1,132 @@
+{
+  "ret": true,
+  "data": {
+    "city": "上海",
+    "swiperList": [
+      {
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/7d/df6ff468331c43.jpg_r_640x214_1f3783d0.jpg"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/7b/2a6b0ce087f0e5.jpg_r_640x214_5c76b115.jpg"
+      }
+    ],
+    "iconList": [
+      {
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+        "desc": "踏青赏花"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png",
+        "desc": "上海野生动物园"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "https://img1.qunarzz.com/piao/fusion/1810/50/26ffa31b56646402.png",
+        "desc": "上海海昌"
+      },
+      {
+        "id": "0005",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/b1/528a9e80403b8c02.png",
+        "desc": "上海欢乐谷"
+      },
+      {
+        "id": "0006",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/209908a8fc21779b485ab05f01835eaa.png",
+        "desc": "辰山植物园"
+      },
+      {
+        "id": "0007",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/fa/2548667cb6e902.png",
+        "desc": "自然博物馆"
+      },
+      {
+        "id": "0008",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201912/9480e99a101564a22dfff0c4b9d0861c.png",
+        "desc": "上海杜莎"
+      },
+      {
+        "id": "0009",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+        "desc": "东方绿舟"
+      },
+      {
+        "id": "0010",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/fa/2548667cb6e902.png",
+        "desc": "上海科技馆"
+      }
+    ],
+    "recommendList": [
+      {
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/2003/28/284dafc9676b1e06a3.water.jpg_200x200_1b020636.jpg",
+        "title": "上海野生动物园",
+        "desc": "会跳芭蕾的小海狮们~"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1811/7e/7ecbd353174c66b1a3.img.jpg_200x200_f661532a.jpg",
+        "title": "上海欢乐谷",
+        "desc": "敢上1200米长的木质过山车吗？"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/2003/2b/2b5bd22ea6a3cff9a3.water.jpg_200x200_35882e48.jpg",
+        "title": "上海海昌海洋公园",
+        "desc": "这里最近很火哦，好多人都在点评它呢！"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/2003/de/de11d542e3f0776da3.water.jpg_200x200_4a7e1531.jpg",
+        "title": "浦江郊野公园奇迹花园",
+        "desc": "🔥好评如潮，小伙伴热推景点~"
+      },
+      {
+        "id": "0005",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/2004/6b/6b4d84eaad3486aaa3.img.jpg_200x200_311fb644.jpg",
+        "title": "安徒生童话乐园",
+        "desc": "把握安徒生主题，深入结合童话特质"
+      }
+    ],
+    "weekendList": [
+      {
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/7d/df6ff468331c43.jpg_r_640x214_1f3783d0.jpg",
+        "title": "上海必打卡",
+        "desc": "中西合璧，现代和传统各有各的精彩"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1603/cf/762cb38938a093.jpg_r_640x214_e02c18ef.jpg",
+        "title": "上海看花",
+        "desc": "这个好天气，一起去看花吧"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1603/ad/69b0fc5f48ad5f.jpg_r_640x214_b0fd5c7b.jpg",
+        "title": "周末亲子爱玩",
+        "desc": "走进自然或玩转乐园，感知大千世界，游乐项目惊险刺激，特色表演异彩纷呈，等你们~"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/7b/2a6b0ce087f0e5.jpg_r_640x214_5c76b115.jpg",
+        "title": "情迷博物馆",
+        "desc": "走进艺术殿堂，电影博物馆生动演绎着电影人和电影背后的故事，你不想知道吗~"
+      },
+      {
+        "id": "0005",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1511/1d/fe098e8cfec117.jpg_r_640x214_a9be292a.jpg",
+        "title": "上海城市观光",
+        "desc": "来这里寻找你所不认识的魔都 ，感受云端漫步，品味老上海风情，享受休闲时光"
+      }
+    ]
+  }
+}
