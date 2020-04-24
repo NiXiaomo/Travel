@@ -5,14 +5,14 @@
         <div class="title border-topbottom">当前城市</div>
         <div class="button-list">
           <div class="button-wrapper">
-            <div class="button">北京</div>
+            <div class="button">{{this.currentCity}}</div>
           </div>
         </div>
       </div>
       <div class="area">
         <div class="title border-topbottom">热门城市</div>
         <div class="button-list">
-          <div class="button-wrapper" v-for="item of hot" :key="item.id">
+          <div class="button-wrapper" v-for="item of hot" :key="item.id" @click="handleCityClick(item.name)">
             <div class="button">{{item.name}}</div>
           </div>
         </div>
@@ -20,7 +20,8 @@
       <div class="area" v-for="(item, key) of cities" :key="key" :ref="key">
         <div class="title border-topbottom">{{key}}</div>
         <div class="item-list">
-          <div class="item border-bottom" v-for="innerItem of item" :key="innerItem.id">{{innerItem.name}}</div>
+          <div class="item border-bottom" v-for="innerItem of item"
+               :key="innerItem.id" @click="handleCityClick(innerItem.name)">{{innerItem.name}}</div>
         </div>
       </div>
     </div>
@@ -29,6 +30,7 @@
 
 <script>
 import BScroll from 'better-scroll'
+import { mapState, mapMutations } from 'vuex'
 export default {
   name: 'CityList',
   props: {
@@ -36,8 +38,25 @@ export default {
     cities: Object,
     letter: String
   },
-  mounted () {
-    this.scroll = new BScroll(this.$refs.wrapper)
+  computed: {
+    /* 把 city 映射到计算属性 currentCity 之中,方便调用 */
+    ...mapState({
+      currentCity: 'city'
+    })
+  },
+  methods: {
+    handleCityClick (city) {
+      // 使用vuex的actions向外触发修改城市事件
+      // this.$store.dispatch('changeCity', city)
+      // 跳过actions直接调用mutations中的方法
+      // this.$store.commit('changeCity', city)
+      // 使用 mapMutations 映射的方法
+      this.changeCity(city)
+      // 跳转回首页
+      this.$router.push('/')
+    },
+    /* 将 mutations 里的 changeCity 方法,映射到当前组件的同名方法中 */
+    ...mapMutations(['changeCity'])
   },
   watch: {
     letter () {
@@ -47,6 +66,9 @@ export default {
         this.scroll.scrollToElement(element)
       }
     }
+  },
+  mounted () {
+    this.scroll = new BScroll(this.$refs.wrapper)
   }
 }
 </script>
