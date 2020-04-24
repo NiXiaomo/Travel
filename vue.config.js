@@ -1,3 +1,10 @@
+const path = require('path')
+
+// 拼接路径
+function resolve (dir) {
+  return path.join(__dirname, dir)
+}
+
 module.exports = {
   /** 区分打包环境与开发环境
    * process.env.NODE_ENV==='production'  (打包环境)
@@ -33,7 +40,11 @@ module.exports = {
 
   productionSourceMap: false, // 调整内部的webpack配置. // see https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md
 
-  chainWebpack: () => {
+  chainWebpack: (config) => {
+    config.resolve.alias
+      .set('@', resolve('src'))
+      .set('styles', resolve('src/assets/styles'))
+      .set('components', resolve('src/assets/components'))
   },
 
   configureWebpack: () => {
