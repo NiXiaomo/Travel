@@ -44,7 +44,7 @@ module.exports = {
     config.resolve.alias
       .set('@', resolve('src'))
       .set('styles', resolve('src/assets/styles'))
-      .set('components', resolve('src/assets/components'))
+      .set('components', resolve('src/components'))
   },
 
   configureWebpack: () => {
