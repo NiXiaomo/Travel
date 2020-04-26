@@ -39,8 +39,12 @@ export default {
     }
   },
   activated () {
-    // 页面激活时监听滚动事件
+    // 页面激活时, 绑定滚动事件
     window.addEventListener('scroll', this.handleScroll)
+  },
+  deactivated () {
+    // 页面隐藏的时候, 解绑事件
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
