@@ -83,7 +83,7 @@ module.exports = {
 
     proxy: {
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'https://travel.lakaka.top',
         pathRewrite: {
           '^/api': '/mock'
         }
