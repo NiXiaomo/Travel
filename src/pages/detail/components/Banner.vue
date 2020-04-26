@@ -12,12 +12,15 @@
         </div>
       </div>
     </div>
-    <components-gallery :imgs="galleryImgs" v-show="showGallery" @close="handleGalleryClose"></components-gallery>
+    <components-fade>
+      <components-gallery :imgs="galleryImgs" v-show="showGallery" @close="handleGalleryClose"></components-gallery>
+    </components-fade>
   </div>
 </template>
 
 <script>
 import ComponentsGallery from 'components/gallery/Gallery'
+import ComponentsFade from 'components/fade/Fade'
 export default {
   name: 'DetailBanner',
   data () {
@@ -39,7 +42,8 @@ export default {
     }
   },
   components: {
-    ComponentsGallery
+    ComponentsGallery,
+    ComponentsFade
   }
 }
 </script>
