@@ -1,18 +1,18 @@
 <template>
   <div>
     <div class="banner" @click="handleBannerClick">
-      <img class="banner-img" src="//img1.qunarzz.com/sight/p0/2003/28/284dafc9676b1e06a3.water.jpg_600x330_541c1117.jpg" alt="">
+      <img class="banner-img" :src="bannerImg" alt="">
       <div class="banner-info">
         <div class="banner-title">
-          上海野生动物园(AAAAA景区)
+          {{this.sightName}}
         </div>
         <div class="banner-number">
           <span class="iconfont banner-icon">&#xe643;</span>
-          187
+          {{this.galleryImgs.length}}
         </div>
       </div>
     </div>
-    <components-gallery :imgs="imgs" v-show="showGallery" @close="handleGalleryClose"></components-gallery>
+    <components-gallery :imgs="galleryImgs" v-show="showGallery" @close="handleGalleryClose"></components-gallery>
   </div>
 </template>
 
@@ -22,12 +22,13 @@ export default {
   name: 'DetailBanner',
   data () {
     return {
-      showGallery: false,
-      imgs: [
-        'http://img1.qunarzz.com/sight/p0/1909/8b/8b57639446a9b694a3.water.jpg_r_800x800_873ede39.jpg',
-        'http://img1.qunarzz.com/sight/p0/1909/af/afad321d16e4cf34a3.water.jpg_r_800x800_5129b3d5.jpg'
-      ]
+      showGallery: false
     }
+  },
+  props: {
+    sightName: String,
+    bannerImg: String,
+    galleryImgs: Array
   },
   methods: {
     handleBannerClick () {
